@@ -15,6 +15,7 @@
   - La ip de la interfaz de red será estática y debe estar en la misma red que los cliente
     - IP 192.168.67.1
     - Máscara de clase c
+    
 ![img](/imagenes/xubuntuconf.png)
 
 ## Instalación de sistema operativo xubuntu.
