@@ -21,5 +21,8 @@
 
 Instalamos el sistema operativo como cualquier ubuntu y lo configuramos con sus respectivas configuraciones.
 Comandos de comprobación.
+
 ![img](/imagenes/comprobacioncomandos.png)
+
+
 ![img](/imagenes/comprobarcomandos2.png)
