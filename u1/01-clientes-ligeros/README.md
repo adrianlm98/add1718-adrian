@@ -7,16 +7,16 @@
  - configurarla en vbox como adaptador puente
 
 
- ![img](/imagenes/confserverxubuntu.png)
+ ![img](./imagenes/confserverxubuntu.png)
 
- ![img](/imagenes/ubuntuserverconf.png)
+ ![img](./imagenes/ubuntuserverconf.png)
 
  - La segunda interfaz será la interna:
   - La ip de la interfaz de red será estática y debe estar en la misma red que los cliente
     - IP 192.168.67.1
     - Máscara de clase c
 
-![img](/imagenes/xubuntuconf.png)
+![img](./imagenes/xubuntuconf.png)
 
 ### Cliente.
 
@@ -26,9 +26,9 @@ Modificamos en las opciones de configuración de virtualbox.
 - Tarjeta de red interna y PXE
 - Orden de arranque en red
 
-![img](/imagenes/clientexubuntu.png)
+![img](./imagenes/clientexubuntu.png)
 
-![img](/imagenes/clientesconf.png)
+![img](./imagenes/clientesconf.png)
 
 ## 2. Instalación de sistema operativo xubuntu.
 
