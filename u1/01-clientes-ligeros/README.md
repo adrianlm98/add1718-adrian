@@ -96,3 +96,7 @@ Al iniciar la máquina cliente me sale un error (pantalla dividida y sin posibil
 ![img](./imagenes/resultadoxubuntu.png)
 
 ![img](./imagenes/resultadofinalubuntu.png)
+
+**Comandos de comprobación**
+
+![img](./imagenes/comandofinal.png)
