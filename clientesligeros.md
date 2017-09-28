@@ -89,7 +89,7 @@ Reiniciamos nuestro servidor y comprobamos que los servicios están iniciados co
 
 ## 3. Iniciar con los clientes.
 
-Al iniciar la máquina cliente me sale un error(pantalla dividida y sin posibilidad de iniciar sesión con ningún usuario). He comprobado con diferentes sistemas operativos (xubuntu/ubuntu(64bit)) y el error es igual en ambos.
+Al iniciar la máquina cliente me sale un error (pantalla dividida y sin posibilidad de iniciar sesión con ningún usuario). He comprobado con diferentes sistemas operativos (xubuntu/ubuntu(64bit)) y el error es igual en ambos.
 
 **Capturas**
 
