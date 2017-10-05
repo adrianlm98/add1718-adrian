@@ -34,7 +34,7 @@ Abrimos el programa tightVNC-viewer y introducimos la ip y contraseña del tight
 
 ![img](./imagenes/windows-viewer.png)
 
-Comprobaciones :
+## Comprobaciones :
 
 ![img](./imagenes/windows-comprobacion.png)
 
