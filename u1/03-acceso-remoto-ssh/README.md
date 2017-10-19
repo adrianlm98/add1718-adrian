@@ -52,7 +52,9 @@ Añadimos en /etc/hosts los equipos ssh-server13 y ssh-client13b.
 
 Hacemos ping a el servidor y al cliente windows.
 
-![img](./imagenes/)
+![img](./imagenes/ping-cliente-server.png)
+
+![img](./imagenes/ping-cliente-cliente.png)
 
 
 
@@ -61,11 +63,13 @@ Cliente Windows
 
 Añadimos en C:\Windows\System32\drivers\etc\hosts los equipos ssh-server13 y ssh-client13a.
 
-![img](./imagenes/)
+![img](./imagenes/host-windows.png)
 
 Hacemos ping a el servidor y al cliente linux.
 
-![img](./imagenes/)
+![img](./imagenes/ping-windows.server.png)
+
+![img](./imagenes/ping-windows-cliente.png)
 
 ## 2. Instalación del servicio ssh-server13
 
@@ -162,5 +166,88 @@ Creamos un alias en /home/luis1/.alias y ponemos los siguiente
 
 ## 5. Autenticación mediante claves públicas
 
-Iniciamos sesión con el usuario adrian y ejecutamos
-    ssh-keygen -t rsa
+Iniciamos sesión con el usuario adrian y ejecutamos ssh-keygen -t rsa.
+
+![img](./imagenes/ssh-keygenclienta.png)
+
+Ahora copiamos la clave pública del usuario adrian de la máquina ssh-client13a con ssh-copy-id
+
+![img](./imagenes/añadirkeys.png)
+
+#### Comprobación:
+
+#### Linux
+
+Entra directamente sin pedir contraseña.
+
+![img](./imagenes/comprobarssh-cliente-a.png)
+
+#### Windows
+
+Entra y necesitas la contraseña.
+
+![img](./imagenes/luis4-openssh-windows.png)
+
+## 6. Uso de SSH como túnel para X
+
+Instalamos una aplicación para probar el ssh como túnel en este caso geany.
+
+![img](./imagenes/geany1.png)
+
+Modificamos el fichero /etc/ssh/sshd_config *X11Fordwarding yes* para permitir la ejecución de aplicaciones gráficas.
+
+![img](./imagenes/geany.png)
+
+Ahora en el client13a comprobamos que geany no está instalado.
+
+![img](./imagenes/app1.png)
+
+Comprobamos que funciona.
+
+![img](./imagenes/ssh-x-geany-1.png)
+
+![img](./imagenes/ssh-x-geany-2.png)
+
+## 7. Aplicaciones Windows nativas
+
+Instalamos wine en el ssh-server13
+
+    zypper install wine
+
+Utilizamos el notepad como ejemplo.
+
+![img](./imagenes/wine-notepad-3.png)
+
+![img](./imagenes/wine-notepad-2.png)
+
+![img](./imagenes/wine-notepad.png)
+
+## 8. Restricciones de Uso
+
+### Restricción sobre un usuario
+
+Nos dirigimos al fichero /etc/ssh/sshd_config del servidor SSH y denegamos el usuario luis2.
+
+![img](./imagenes/denyusers.png)
+
+Comprobamos que no puede iniciar sesión con el usuario luis2.
+
+![img](./imagenes/denyusers2.png)
+
+### Restricción sobre una aplicación
+
+Creamos un grupo llamado remoteapps y incluimos el usuario luis4 dentro del grupo.
+
+![img](./imagenes/remoteapps.png)
+
+Cambiar el grupo propietario de geany a remoteapps y añadimos los permisos para que los demás usuarios que no pertenezcan al grupo remoteapps no puedan utilizar geany.
+
+![img](./imagenes/cambiarpermisos.png)
+
+#### Comprobación:
+
+![img](./imagenes/8.geany.png)
+
+![img](./imagenes/8.1geany.png)
+
+![img](./imagenes/8.3geany.png)
