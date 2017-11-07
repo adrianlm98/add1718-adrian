@@ -131,3 +131,83 @@ Comandos de comprobación:
 ![img](./imagenes/captura43.png)
 
 ## 3. Cliente GNU/Linux (MV2 smb-cli31a)
+
+Configuramos la máquina con el nombre smb-cli13a y añadimos en el fichero hosts las demás máquinas que utilizamos en la practica.
+
+![img](./imagenes/captura35.png)
+
+![img](./imagenes/captura36.png)
+
+### 3.1 Cliente GNU/Linux GUI
+
+Creamos carpetas/archivos en castillo y en barco.
+
+**castillo**
+
+![img](./imagenes/captura44.png)
+
+**barco**
+
+![img](./imagenes/captura45.png)
+
+Comprobamos que el recurso public es de sólo lectura.
+
+![img](./imagenes/captura47.png)
+
+Comandos de comprobación:
+
+![img](./imagenes/captura48.png)
+
+![img](./imagenes/captura49.png)
+
+### 3.2 Cliente GNU/Linux Comandos
+
+Comprobamos el uso de la siguientes herramientas:
+
+![img](./imagenes/captura50.png)
+
+![img](./imagenes/captura51.png)
+
+Creamos la carpeta castillo y la montamos.
+
+![img](./imagenes/captura54.png)
+
+Comandos de comprobación:
+
+![img](./imagenes/captura56.png)
+
+![img](./imagenes/captura57.png)
+
+### 3.3 Montaje automático
+
+Para que se monte automáticamente necesitamos ir a **/etc/fstab** y escribir la siguiente línea.
+
+![img](./imagenes/captura60.png)
+
+Reiniciamos la máquina y comprobamos que ya tenemos montada la carpeta al iniciar.
+
+![img](./imagenes/captura59.png)
+
+### 4. Preguntas para resolver
+
+* ¿Las claves de los usuarios en GNU/Linux deben ser las mismas que las que usa Samba?
+
+No, es recomendable que sean diferentes para aumentar la seguridad de nuestro servidor.
+
+
+* ¿Puedo definir un usuario en Samba llamado soldado3, y que no exista como usuario del sistema?
+
+No necesitamos que esté creado en el sistema para poder logearnos con los usuarios que hemos enlazado al samba.Lo que si se puede hacer es denegar el usuario para que solo pueda entrar al samba y no al sistema.
+
+
+
+* ¿Cómo podemos hacer que los usuarios soldado1 y soldado2 no puedan acceder al sistema pero sí al samba? (Consultar /etc/passwd)
+
+Añadiendo en yast o en /etc/passwd la shell como /bin/false del usuario que queramos degenar el inicio en el sistema.
+
+
+
+
+* Añadir el recurso [homes] al fichero smb.conf según los apuntes. ¿Qué efecto tiene?
+
+Creamos un recurso compartido llamado *homes* que incluirá configuración sobre ese recurso compartido en concreto. (El fichero está en /etc/samba/smb.conf)
