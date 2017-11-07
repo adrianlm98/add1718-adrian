@@ -44,7 +44,7 @@ Creamos el usuario smbguest y modificamos la shell (/bin/false).
 
 ### 1.4 Configurar el servidor Samba
 
-**Antes de cambiar la configuración hacemos una copia de seguridad del fichero de configuración**
+**Antes de cambiar la configuración hacemos una copia de seguridad del fichero de configuración.**
 
 ![img](./imagenes/captura12.png)
 
@@ -96,7 +96,7 @@ Comandos de comprobación :
 
 ## 2. Windows (MV3 smb-cli13b)
 
-Configuramos el cliente Windows.(\etc\hosts)
+Configuramos el cliente Windows.(\etc\hosts).
 
 ![img](./imagenes/captura26.png)
 
@@ -104,7 +104,7 @@ Configuramos el cliente Windows.(\etc\hosts)
 
 ### 2.1 Cliente Windows GUI
 
-Accedemos a nuestro servidor desde "Red" - "\\ip-servidor"
+Accedemos a nuestro servidor desde "Red" - "\\ip-servidor".
 
 Comandos de comprobación:
 
