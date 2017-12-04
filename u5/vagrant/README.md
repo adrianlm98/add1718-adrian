@@ -175,7 +175,7 @@ Hacemos el vagrant init dentro de la carpeta de la nueva máquina y modificamos 
 
 Iniciamos la máquina.
 
-![img](./img/capt41,png)
+![img](./img/capt41.png)
 
 Y nos conectamos por ssh con vagrant ssh.
 
