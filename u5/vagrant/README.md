@@ -1,14 +1,14 @@
 # Vagrant y VirtualBox
 ## 1. Instalación
 Instalamos vagrant en la máquina real utilizando el siguiente comando:
-apt-get install vagrant
+apt-get install vagrant.
 Para comprobar la versión que tenemos instalada.
 
 ![img](./img/captura3.png)
 
 ## 2. Proyecto
 
-Creamos un directo que utilizaremos para nuestro proyecto.
+Creamos un directorio que utilizaremos para nuestro proyecto.
 
 ![img](./img/captura1.png)
 
@@ -18,7 +18,7 @@ Hacemos un vagrant init para crear el Vagrantfile y decirle a vagrant que este e
 
 ## 2.1 Imagen, caja o box
 
-Ahora obtenemos la imagen(caja,box) que vamos a utilizar para crear nuestra máquina.
+Ahora obtenemos la imagen(caja.box) que vamos a utilizar para crear nuestra máquina.
 
 ![img](./img/captura4.png)
 
@@ -34,7 +34,7 @@ Creamos una copia de seguridad por si nos equivocamos podamos recuperar el archi
 
 ## 2.2 Iniciar una nueva máquina
 
-Iniciamos una nueva máquina virtuala usando el comando vagrant up:
+Iniciamos una nueva máquina virtual usando el comando vagrant up:
 
 ![img](./img/captura9.png)
 
@@ -84,7 +84,7 @@ Apagamos la máquina y la eliminamos con los siguientes comandos:
 
 ## 4.1 Suministro mediante shell script
 
-Creamos el siguiente scrip install_apache.sh dentro del proyecto.
+Creamos el siguiente script install_apache.sh dentro del proyecto.
 
 ![img](./img/captura19.png)
 
@@ -102,11 +102,11 @@ Para verificar que efectivamente el servidor Apache ha sido instalado e iniciado
 
 ## 4.2 Suministro mediante Puppet
 
-Modificamos el archivo vagrantfile añadiendo la siguientes líneas.
+Modificamos el archivo vagrantfile añadiendo las siguientes líneas.
 
 ![img](./img/captura25.png)
 
-Creamos un fichero llamado default.pp en manifests con las siguiente líneas:
+Creamos un fichero llamado default.pp en /manifests con las siguiente líneas:
 
 ![img](./img/captura26.png)
 
@@ -141,13 +141,10 @@ Nos aseguramos que tenemos instalado las VirtualBox Guest Additions con el sigui
 
 ![img](./img/carpeta34.png)
 
-![img](./img/captura.png)
 
 ## 5.2 Crear la caja vagrant
 
 Creamos una nueva carpeta mivagrant13conmicaja.
-
-# FALTA
 
 Ejecutamos vagrant init para crear el fichero de configuración nuevo.
 
