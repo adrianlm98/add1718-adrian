@@ -75,7 +75,7 @@ Creamos un fichero HTML (holamundo.html)
 
 ![img](./img/captura12.png)
 
-Tambien creamos un script server.sh.
+Tambien creamos un script server.sh, para ejecutar un supervisor casero.
 
 ![img](./img/captura13.png)
 
