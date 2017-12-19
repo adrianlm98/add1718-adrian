@@ -154,7 +154,7 @@ Creamos el fichero Dockerfile.
 Ejecutamos los siguientes comandos.
 
 ~~~
-cd /home/nombre-del-alumno/docker13 # Entramos al directorio del Dockerfile
+cd /home/adrian/docker13            # Entramos al directorio del Dockerfile
 docker images                       # Consultamos las imágenes disponibles
 docker build -t adrian/nginx2 .    # Construye imagen a partir del Dockefile
                                     # OJO el punto es necesario
