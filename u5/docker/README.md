@@ -81,7 +81,7 @@ Tambien creamos un script server.sh, para ejecutar un supervisor casero.
 
 **Añadimos permisos de ejecución al script con el comando chmod +x server.sh**
 
-Buscamos el id del contenedor con el docker ps.Aunque podemos utilizar el nombre para poder identificar el contenedor.
+Buscamos el id del contenedor con el **docker ps**.Aunque podemos utilizar el nombre para poder identificar el contenedor.
 
 ![img](./img/captura14.png)
 
@@ -108,7 +108,7 @@ Iniciamos el contenedor que contiene nginx.
 ~~~
 docker ps
 docker ps -a
-docker run --name=con_nginx -p 80 -t dvarrui/nginx /root/server.sh
+docker run --name=con_nginx -p 80 -t adrian/nginx /root/server.sh
 Booting Nginx!
 Waiting...
 ~~~
@@ -116,11 +116,11 @@ Waiting...
 ![img](./img/captura17.png)
 
 Esto significa que el script está en ejecución, abrimos una nueva terminal.
-Ejecutamos docker ps, nos muestra los contenedores en ejecución y sacamos el puerto para acceder desde el navegador web.
+Ejecutamos **docker ps**, nos muestra los contenedores en ejecución y sacamos el puerto para acceder desde el navegador web.
 
 ![img](./img/captura18.png)
 
-Abrimos un navegador web y ponemos localhost:32768. Accederemos a la página web del contenedor.
+Abrimos un navegador web y ponemos **localhost:32768**. Accederemos a la página web del contenedor.
 
 ![img](./img/captura19.png)
 
@@ -141,7 +141,7 @@ docker ps -a
 
 ### 4.1 Preparar ficheros
 
-Crear directorio /home/adrian/docker13 y ponemos dentro los siguientes ficheros:
+Crear directorio **/home/adrian/docker13** y ponemos dentro los siguientes ficheros:
 
 ![img](./img/captura27.png)
 
@@ -154,9 +154,9 @@ Creamos el fichero Dockerfile.
 Ejecutamos los siguientes comandos.
 
 ~~~
-cd /home/nombre-del-alumno/dockerXX # Entramos al directorio del Dockerfile
+cd /home/nombre-del-alumno/docker13 # Entramos al directorio del Dockerfile
 docker images                       # Consultamos las imágenes disponibles
-docker build -t dvarrui/nginx2 .    # Construye imagen a partir del Dockefile
+docker build -t adrian/nginx2 .    # Construye imagen a partir del Dockefile
                                     # OJO el punto es necesario
 docker images                       # Debe aparecer nuestra nueva imagen
 ~~~
@@ -166,7 +166,7 @@ docker images                       # Debe aparecer nuestra nueva imagen
 
 ### 4.3 Crear contenedor y comprobar
 
-Creamos un nuevo contenedor con el nombre mv_nginx2 a partir de la imagen adrian/nginx2 y ponemos que ejecute el programa server.sh.
+Creamos un nuevo contenedor con el nombre **mv_nginx2** a partir de la imagen **adrian/nginx2** y ponemos que ejecute el programa server.sh.
 
 ![img](./img/captura30.png)
 
@@ -209,7 +209,7 @@ Importamos imagen docker desde el fichero.
 Movemos el .tar a otra máquina con docker instalado y ejecutamos los siguientes comandos para cargarla.
 
 ~~~
-docker load -i ~/containerXX-backup.tar   # cargamos la imagen docker a partir del fichero tar.
+docker load -i ~/container13-backup.tar   # cargamos la imagen docker a partir del fichero tar.
 docker images   # comprobamos que la nueva imagen está disponible.
 ~~~
 
