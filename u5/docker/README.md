@@ -64,8 +64,6 @@ apt-get install -y nano   # Instalamos editor vi en el contenedor
 ps -ef
 ~~~
 
-![img](./img/captura8.png)
-
 ![img](./img/captura9.png)
 
 ![img](./img/captura10.png)
