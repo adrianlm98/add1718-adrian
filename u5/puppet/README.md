@@ -1,4 +1,4 @@
-# PUPPET : Instalación en linux (master-cliente) y windows (cliente)
+## PUPPET : Instalación en linux (master-cliente) y windows (cliente)
 ## 1.1 Configuración
 Para la práctica necesitamos 3 MV.
 
@@ -35,8 +35,12 @@ Nombre del equipo: cli2alu13
 ## 1.2 Configuración del archivo /etc/hosts
 
 **GNU/Linux**
-## FALTA
+
+![img](./img/hostlinux.png)
+
 **Windows**
+
+![img](./img/hostwindows.png)
 
 ## 1.3 Comprobación de las configuraciones
 
@@ -221,10 +225,7 @@ Iniciar consola puppet en Windows y probamos los siguientes comandos :
 - puppet resource user nombre-alumno1: Para ver la configuración puppet del usuario.
 - puppet resource file c:\Users: Para var la configuración puppet de la carpeta.
 
-![img](./img/captura46.png)
-## Sacar nuevas capturas
-
-![img](./img/captura47.png)
+![img](./img/captura6.2.png)
 
 ![img](./img/captura48.png)
 
@@ -271,3 +272,5 @@ Contenido para readme.txt: "¡Al abordaje!".
 Ejemplo de configuración puppet para descargar fichero:
 
 ![img](./img/captura60.png)
+
+**No funciona en versiones actuales de puppet**
