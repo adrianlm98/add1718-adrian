@@ -1,5 +1,6 @@
 ## PUPPET : Instalación en linux (master-cliente) y windows (cliente)
 ## 1.1 Configuración
+
 Para la práctica necesitamos 3 MV.
 
 **MV1(master-linux):**
@@ -263,7 +264,9 @@ Modificamos el site.pp con la nueva configuración.
 
 ![img](./img/captura58.png)
 
-## FALTA CAPTURA COMPROBACION
+Comprobación :
+
+![img](./img/captura63.png)
 ## 9. Para probar: Fichero readme.txt
 
 Los ficheros que se guardan en /etc/puppet/files se pueden descargar desde el resto de máquinas cliente puppet.
