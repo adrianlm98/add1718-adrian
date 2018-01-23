@@ -1,5 +1,5 @@
 
-# PUPPET
+
 
 ## 1.1 Configuración :
 
@@ -13,7 +13,7 @@ Nombre del equipo: master13
 
 Dominio: curso1718
 
-
+# PUPPET
 
 **MV2 (cliente-linux):**
 
