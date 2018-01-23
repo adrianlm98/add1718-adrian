@@ -1,5 +1,5 @@
 
-# PUPPET
+# PUPPET WINDOWS - LINUX
 
 ## 1.1 Configuración :
 
