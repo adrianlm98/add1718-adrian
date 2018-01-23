@@ -1,4 +1,5 @@
 # PUPPET: Instalación en linux (master-cliente) y windows (cliente)
+
 ## 1.1 Configuración
 
 Para la práctica necesitamos 3 MV.
