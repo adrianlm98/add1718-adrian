@@ -7,6 +7,7 @@ if `whoami`.rstrip != "root"
 end
 if ARGV.size != 1
     puts "Necesitas poner el nombre del fichero donde tienes los usuarios"
+    exit
 end
 if not File.exists?(filename)
     puts ("El fichero que intenta acceder no existe : #{filename}")
@@ -27,7 +28,7 @@ lines.each do |i|
     else
         if system("id #{line[0]} 2> /dev/null 1> /dev/null") == true
             system("userdel -rf #{line[0]} 2> /dev/null 1> /dev/null")
-            puts("El usuario ha sido borrado")
+            puts("El siguiente usuario ha sido borrado : #{line[0]}")
         else
             puts("El siguiente usuario no existe : #{line[0]}")
         end
