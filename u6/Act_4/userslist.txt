@@ -1,0 +1,6 @@
+adrian:luis:prueba@hotmail.com:01/02/34:add
+alfonso:perez:prueba2@hotmail.com:02/03/35:delete
+omar:gonzalez::03/04/36:add
+carlos:mora:prueba4@hotmail.com:04/05/37:delete
+miqueas:rodriguez::05/06/38:add
+victor:garcia:prueba6@hotmail.com:06/07/39:delete
